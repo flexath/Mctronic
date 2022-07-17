@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="12dp"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/logoLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp">
+
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="169dp"
+            android:layout_height="173dp"
+            android:src="@drawable/mclogo"
+            android:transitionName="logoTransition"
+            android:contentDescription="@string/logo_description" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/welcomeMsgLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoLinearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:transitionName="departmentTransition">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/audiowide"
+            android:text="@string/hello_msg"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/faster_one"
+            android:text="@string/welcome_back_msg"
+            android:textColor="@color/light_blue_500"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/userNameLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomeMsgLinearLayout"
+        android:layout_marginTop="40dp"
+        android:padding="5dp"
+        android:transitionName="loginTransition">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userNameInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="@string/username"
+                android:textColorHint="#616161"
+                android:transitionName="signUpToSignInTransition"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/passwordLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userNameLinearLayout"
+        android:orientation="vertical"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:transitionName="loginTransition">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:hint="@string/prompt_password"
+                android:inputType="textPassword"
+                android:layout_height="wrap_content"
+                android:transitionName="signUpToSignInTransition"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textForgotPw"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_text"
+            android:textColor="@color/red"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="240dp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signInButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordLinearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/light_dark"
+        android:text="@string/sign_in_button"
+        android:textColor="#2979FF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:transitionName="loginTransition"
+        app:icon="@drawable/ic_login" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up_button"
+        android:textColor="#2979FF"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/signInButton"
+        android:layout_marginTop="10dp"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+
+</RelativeLayout>

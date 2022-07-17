@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Mctronic</string>
+    <string name="mcText_name">Mechatronics</string>
+    <string name="mcStudentText_name">Student App</string>
+    <string name="developer_name">Developed by Flexath</string>
+
+    <string name="logo_description">Logo</string>
+    <string name="hello_msg">Hello Aung Thiha</string>
+    <string name="welcome_back_msg">Welcome Back</string>
+    <string name="welcome_msg">Welcome 🤗</string>
+    <string name="forgot_text">forgot password?</string>
+    <string name="username">Username or Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="sign_in_button">Sign In</string>
+    <string name="sign_up_button">Or Sign Up</string>
+    <string name="sign_up_text">Sign Up to register</string>
+    <string name="full_name">Full Name</string>
+    <string name="username_sign_up">Username</string>
+    <string name="email">Email</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="roll_number">Roll Number</string>
+    <string name="register">Register</string>
+    <string name="home_ic">Home</string>
+    <string name="noti_ic">Notification</string>
+    <string name="activity_ic">Activity</string>
+    <string name="profile_ic">Profile</string>
+
+</resources>
