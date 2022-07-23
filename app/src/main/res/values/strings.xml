@@ -24,5 +24,6 @@
     <string name="noti_ic">Notification</string>
     <string name="activity_ic">Activity</string>
     <string name="profile_ic">Profile</string>
+    <string name="current_year">Current Year</string>
 
 </resources>

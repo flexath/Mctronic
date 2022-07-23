@@ -2,8 +2,7 @@
 <resources>
     <style name="imageRounded" parent="">
         <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">50dp</item>
+        <item name="cornerSize">47dp</item>
         <item name="color">@color/white</item>
     </style>
-
 </resources>

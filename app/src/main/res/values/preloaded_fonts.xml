@@ -2,6 +2,10 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/aclonica</item>
+        <item>@font/acme</item>
+        <item>@font/alegreya_sans_sc_black</item>
+        <item>@font/alegreya_sans_sc_medium</item>
+        <item>@font/alegreya_sans_sc_thin</item>
         <item>@font/amatica_sc</item>
     </array>
 </resources>
