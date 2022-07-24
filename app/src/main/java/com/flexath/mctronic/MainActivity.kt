@@ -33,12 +33,13 @@ class MainActivity : AppCompatActivity() {
         typeWriter.setLetterSpacing(20f)
         typeWriter.setText("MECHATRONICS")
         typeWriter.setListener{
-                Intent(this,LoginActivity::class.java).also {
-                    val options = ActivityOptionsCompat.makeSceneTransitionAnimation(this, androidx.core.util.Pair(imageLogo, imageLogo.transitionName),
-                        androidx.core.util.Pair(typeWriter, typeWriter.transitionName),androidx.core.util.Pair(studentAppName, studentAppName.transitionName))
-                    startActivity(it,options.toBundle())
+            Intent(this,LoginActivity::class.java).also {
+                val options = ActivityOptionsCompat.makeSceneTransitionAnimation(this, androidx.core.util.Pair(imageLogo, imageLogo.transitionName),
+                    androidx.core.util.Pair(typeWriter, typeWriter.transitionName),androidx.core.util.Pair(studentAppName, studentAppName.transitionName))
+                    startActivityForResult(it,0,options.toBundle())
                 }
         }
         typeWriter.startAnimation()
+        finishActivity(0)
     }
 }
